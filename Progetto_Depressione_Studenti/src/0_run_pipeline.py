@@ -1,5 +1,6 @@
 import subprocess
 import time
+import sys
 
 # Lista ordinata dei file da eseguire
 scripts = [
@@ -22,7 +23,7 @@ for script in scripts:
     print(f"{'='*50}\n")
     
     # Esegue lo script Python e aspetta che finisca prima di passare al successivo
-    subprocess.run(["python", script])
+    subprocess.run([sys.executable, script])
 
 end_total = time.time()
 tempo_totale = round(end_total - start_total, 2)
@@ -30,4 +31,5 @@ tempo_totale = round(end_total - start_total, 2)
 print("\n\n" + "="*70)
 print(f" PIPELINE COMPLETATA CON SUCCESSO IN {tempo_totale} SECONDI! ")
 print(" Tutti i grafici e i modelli sono stati generati nella directory.")
+
 print("="*70)

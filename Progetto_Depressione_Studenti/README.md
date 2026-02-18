@@ -32,7 +32,7 @@ Il flusso narrativo della **Relazione in PDF** segue un percorso didattico, ment
 
 ## Requisiti e Installazione
 
-**(Nota per Windows: se il comando python non viene riconosciuto, utilizzare il launcher py digitando per esempio: py 0_run_pipeline.py)**
+>**(Nota per Windows: se il comando python non viene riconosciuto, utilizzare il launcher py digitando per esempio: py 0_run_pipeline.py)**
 
 Il progetto richiede **Python 3.8+**. 
 È fortemente raccomandato l'uso di un ambiente virtuale isolato (`venv` o `conda`) per evitare conflitti con altre librerie di sistema.
@@ -43,7 +43,8 @@ Il progetto richiede **Python 3.8+**.
    - Su Windows: `python -m venv venv` poi `venv\Scripts\activate`
 3. **Installa le dipendenze necessarie** eseguendo questo comando dalla directory principale del progetto:
    `pip install -r requirements.txt`
-**(Nota per Windows: se il comando pip non viene riconosciuto, utilizzare: py -m pip install -r requirements.txt)**
+   
+>**(Nota per Windows: se il comando pip non viene riconosciuto, utilizzare: py -m pip install -r requirements.txt)**
 
 > **Nota per l'esecuzione del DSS in Prolog:** La libreria `pyswip` richiede che il software open-source **SWI-Prolog** sia installato nel sistema operativo e aggiunto alla variabile d'ambiente PATH.
 
@@ -71,4 +72,5 @@ Il sistema eseguirà automaticamente le seguenti operazioni:
 
 
 Tutti i dataset intermedi verranno salvati in `/data`, mentre tutti gli output grafici e visivi verranno depositati ordinatamente in `/docs`.
+
 

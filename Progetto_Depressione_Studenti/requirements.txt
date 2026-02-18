@@ -1,0 +1,8 @@
+pandas
+scikit-learn
+owlready2
+pgmpy
+pyswip
+networkx
+matplotlib
+seaborn

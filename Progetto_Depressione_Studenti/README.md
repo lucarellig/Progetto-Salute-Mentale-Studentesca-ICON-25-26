@@ -32,6 +32,8 @@ Il flusso narrativo della **Relazione in PDF** segue un percorso didattico, ment
 
 ## Requisiti e Installazione
 
+**(Nota per Windows: se il comando python non viene riconosciuto, utilizzare il launcher py digitando per esempio: py 0_run_pipeline.py)**
+
 Il progetto richiede **Python 3.8+**. 
 È fortemente raccomandato l'uso di un ambiente virtuale isolato (`venv` o `conda`) per evitare conflitti con altre librerie di sistema.
 
@@ -65,5 +67,6 @@ Il sistema eseguirà automaticamente le seguenti operazioni:
 * **Fase 3:** Addestramento Machine Learning (Random Forest) e calcolo metriche XAI.
 * **Fase 4:** Valutazione del Sistema Esperto in Prolog (incluso il rilevamento del *Falso Negativo* tramite Protocollo DELTA).
 * **Fase 5:** Calcolo eziologico dei DAG Bayesiani ed esplorazione dell'effetto *Explaining Away*.
+
 
 Tutti i dataset intermedi verranno salvati in `/data`, mentre tutti gli output grafici e visivi verranno depositati ordinatamente in `/docs`.
